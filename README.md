@@ -729,7 +729,7 @@ This 19 minutes video:  <http://www.restapitutorial.com/lessons/whatisrest.html>
 Be sure to push the appropriate files to your group's repository.
 
  - [ ] As individuals make the following files functional programs by **typing** and add them to their group repository:
-    - [ ] `_name_.summarize-db.js` from the functions supplied in [approach one](#approach-one).  You will need to incorporate some other code to make it work
+    - [ ] `ironman.summarize-db.js` from the functions supplied in [approach one](#approach-one).  You will need to incorporate some other code to make it work
     - [ ] `_name_.show-databases.js` from [back to databases](#back-to-databases)
     - [ ] `_name_.dbf-setups.js` from [making things a big cleaner(#making-things-a-bit-cleaner)
     - [ ] `_name_.dbf-summarize-db-promises.js` from [making things a big cleaner(#making-things-a-bit-cleaner)
