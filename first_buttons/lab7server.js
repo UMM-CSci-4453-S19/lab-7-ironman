@@ -13,18 +13,24 @@ var sql = "select * from ironman.till_buttons";
 
 var buttons;
 
-/*connection.query(sql,function(err,rows,fields){
+connection.query(sql,function(err,rows,fields){
     if(err){
         console.log('Error looking up databases');
     } else {
-        var buttons = rows;
-        console.log('1111');
+        buttons = rows;
+        for(var index in buttons){
+            button = buttons[index];
+            button.left = button.left_position;
+            delete button.left_position;
+        }
+        //console.log(buttons);
     }
-});*/
-var queryPromise = DBF.query(sql);
+});
+
+/*var queryPromise = DBF.query(sql);
 queryPromise=queryPromise.then(
     function(results){return({table:results,dbf:dbf
-    })});
+    })});*/
 
 
 //var buttons=[{"buttonID":2,"left":110,"top":70,"width":100,"label":"hambugers","invID":2},{"buttonID":3,"left":210,"top":70,"width":100,"label":"bannanas","invID":3},{"buttonID":4,"left":10,"top":120,"width":100,"label":"milkduds","invID":4}]; //static buttons
